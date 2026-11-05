@@ -43,13 +43,13 @@
 /************************************/	
 
 :root{
-	--primary-color			: #14183E;
-	--secondary-color		: #F1EFF0;
-	--text-color			: #474749;
-	--accent-color			: #3450A3;
+	--primary-color			: #103642;
+	--secondary-color		: #EBF4F7;
+	--text-color			: #3D4D52;
+	--accent-color			: #2090B5;
 	--white-color			: #FFFFFF;
-	--divider-color			: #14183E0F;
-	--dark-divider-color	: #F1EFF024;
+	--divider-color			: #1036420F;
+	--dark-divider-color	: #EBF4F724;
 	--error-color			: rgb(230, 87, 87);
 	--default-font			: "Plus Jakarta Sans", sans-serif;
 }
