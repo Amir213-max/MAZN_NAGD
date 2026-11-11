@@ -43,14 +43,18 @@
 /************************************/	
 
 :root{
-	--primary-color			: #103642;
-	--secondary-color		: #EBF4F7;
-	--text-color			: #3D4D52;
-	--accent-color			: #2090B5;
+	/* MZN NAJD brand palette */
+	--primary-color			: #234E61; /* Mzn Deep */
+	--secondary-color		: #F5F8F9; /* Mist */
+	--sky-color				: #C6DFE6; /* Sky */
+	--text-color			: #2B2F33; /* Ink */
+	--accent-color			: #008FB3; /* Mzn Teal */
+	--coral-color			: #E07A5F; /* Accent Coral */
 	--white-color			: #FFFFFF;
-	--divider-color			: #1036420F;
-	--dark-divider-color	: #EBF4F724;
+	--divider-color			: #234E6114;
+	--dark-divider-color	: #F5F8F924;
 	--error-color			: rgb(230, 87, 87);
+	--brand-gradient		: linear-gradient(160deg, #234E61 0%, #008FB3 100%);
 	--default-font			: "Plus Jakarta Sans", sans-serif;
 }
 
@@ -63,7 +67,7 @@ body{
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.6em;
-	background: url('../images/section-bg-shape.png') var(--white-color);
+	background: url('../images/section-bg-shape.png') var(--secondary-color);
 	background-repeat: repeat-y;
 	background-position: top 1000px center;
 	background-size: auto;
@@ -235,8 +239,8 @@ body{
 }
 
 .btn-default.btn-highlighted{
-	background: var(--secondary-color);
-	color: var(--accent-color);
+	background: var(--coral-color);
+	color: var(--white-color);
 }
 
 .btn-default.btn-highlighted:hover{
@@ -244,7 +248,7 @@ body{
 }
 
 .btn-default.btn-highlighted::before{
-	background: var(--accent-color);
+	background: var(--primary-color);
 }
 
 .cb-cursor:before{
@@ -292,8 +296,15 @@ body{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	max-width: 66px;
+	width: 140px;
+	max-width: 140px;
 	transform: translate(-50%, -50%);
+}
+
+#loading-icon img{
+	width: 100%;
+	height: auto;
+	display: block;
 }
 
 @keyframes rotate-loading{
@@ -505,10 +516,10 @@ header.main-header .header-sticky.active{
 }
 
 .navbar-brand img{
-	height: 64px;
+	height: 56px;
 	width: auto;
-	border-radius: 8px;
-	object-fit: cover;
+	border-radius: 0;
+	object-fit: contain;
 }
 
 .main-menu .nav-menu-wrapper{
@@ -785,7 +796,7 @@ header.main-header .header-sticky.active{
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 70.86%);
+	background: linear-gradient(270deg, rgba(35, 78, 97, 0.15) 0%, rgba(35, 78, 97, 0.78) 72%);
 	width: 100%;
 	height: 100%;
 	z-index: 1;
@@ -825,7 +836,7 @@ header.main-header .header-sticky.active{
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(1.91deg, rgba(38, 38, 38, 0.3) 64.59%, #262626 101.91%), linear-gradient(270deg, rgba(38, 38, 38, 0) 44.72%, #262626 117.07%), linear-gradient(180deg, rgba(38, 38, 38, 0) 68.75%, rgba(38, 38, 38, 0.8) 100%);
+    background: linear-gradient(1.91deg, rgba(35, 78, 97, 0.35) 64.59%, #234E61 101.91%), linear-gradient(270deg, rgba(35, 78, 97, 0) 44.72%, #234E61 117.07%), linear-gradient(180deg, rgba(35, 78, 97, 0) 68.75%, rgba(35, 78, 97, 0.85) 100%);
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -1936,10 +1947,11 @@ header.main-header .header-sticky.active{
 }
 
 .footer-logo img{
-	height: 90px;
+	height: 88px;
 	width: auto;
-	border-radius: 10px;
-	object-fit: cover;
+	border-radius: 0;
+	object-fit: contain;
+	background: transparent;
 }
 
 .about-footer-content{
@@ -2110,7 +2122,7 @@ header.main-header .header-sticky.active{
     bottom: 0;
     left: 0;
     right: 0;
-	background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 70.86%);
+	background: linear-gradient(270deg, rgba(0, 143, 179, 0.18) 0%, rgba(35, 78, 97, 0.82) 72%);
     width: 100%;
     height: 100%;
     z-index: 0;
